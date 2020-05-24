@@ -20,15 +20,15 @@ sourceurl='https://www.flyingdog.com/beers/'
 ########### Set up the chart
 bitterness = go.Bar(
     x=beers,
-    y=ibu_values,
-    name=label1,
-    marker={'color':color1}
+    y=[35, 60, 85, 85],
+    name='IBU',
+    marker={'color':'darkgreen'}
 )
 alcohol = go.Bar(
     x=beers,
-    y=abv_values,
-    name=label2,
-    marker={'color':color2}
+    y=[5.4, 7.1, 9.2, 11.5],
+    name='ABV',
+    marker={'color':'blue'}
 )
 
 beer_data = [bitterness, alcohol]
